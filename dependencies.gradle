@@ -1,0 +1,50 @@
+ext {
+    //Version
+    kotlin = '1.3.61'
+    ktx = '1.2.0'
+    appcompat = '1.1.0'
+    lifecycle = '2.2.0'
+    coroutinesVersion = '1.3.2'
+    daggerVersion = '2.25.4'
+    retrofitVersion = '2.7.1'
+    okHttpLoggingVersion = '3.10.0'
+    delegatesVersion = '4.2.0'
+    navVersion = '2.3.0-alpha05'
+
+    projectDependencies = [
+            kotlin             : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin",
+            ktx                : "androidx.core:core-ktx:$ktx",
+            appCompat          : "androidx.appcompat:appcompat:${appcompat}",
+            constraintLayout   : "androidx.constraintlayout:constraintlayout:${appcompat}",
+            lifecycleExtentions: "androidx.lifecycle:lifecycle-extensions:${lifecycle}",
+            viewmodels         : "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle}",
+            coroutines         : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutinesVersion}",
+            dagger             : "com.google.dagger:dagger:${daggerVersion}",
+            daggerAndroid      : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerCompiler     : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            retrofit           : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            gsonConverter      : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            logginInterceptor  : "com.squareup.okhttp3:logging-interceptor:${okHttpLoggingVersion}",
+            dorfmanDelegates   : "com.hannesdorfmann:adapterdelegates4:${delegatesVersion}",
+            navigationFragment : "androidx.navigation:navigation-fragment:${navVersion}",
+            navigationUi       : "androidx.navigation:navigation-ui:${navVersion}",
+    ]
+
+    junitVersion = "4.13"
+    kotlinTestVersion = "1.3.2"
+    testrunnerVersion = "1.0.2"
+    espressoCoreVersion = "3.0.2"
+    mockitoVersion = "3.2.4"
+    mockitoKotlinVersion = "2.2.0"
+    androidxTestVersion = "2.1.0"
+
+    testDependencies = [
+            junit         : "junit:junit:${junitVersion}",
+            mockitoInline : "org.mockito:mockito-inline:${mockitoVersion}",
+            mockitoAndroid: "org.mockito:mockito-android:${mockitoVersion}",
+            mockitoKotlin : "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoKotlinVersion}",
+            coroutinesTest: "org.jetbrains.kotlinx:kotlinx-coroutines-test:${kotlinTestVersion}",
+            androidxTest  : "android.arch.core:core-testing:${androidxTestVersion}"
+    ]
+
+}

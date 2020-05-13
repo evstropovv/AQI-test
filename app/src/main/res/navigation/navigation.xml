@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation">
+
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.testtask2.presentation.userinfo.StationInfoFragment"
+        android:label="Info" />
+    <navigation
+        android:id="@+id/navigation"
+        app:startDestination="@id/stationsFragment" >
+        <fragment
+            android:id="@+id/stationsFragment"
+            android:name="com.testtask2.presentation.stations.StationsFragment"
+            android:label="Stations">
+            <action
+                android:id="@+id/action_stationsFragment_to_userInfoFragment"
+                app:destination="@id/userInfoFragment" />
+            <action
+                android:id="@+id/action_stationsFragment_to_filterDialog"
+                app:destination="@id/filterDialog" />
+        </fragment>
+        <dialog
+            android:id="@+id/filterDialog"
+            android:name="com.testtask2.presentation.stations.FilterDialog"
+            android:label="FilterDialog" />
+    </navigation>
+</navigation>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AQI Test</string>
+    <string name="minimum_air_quality_index">Minimum air quality index</string>
+    <string name="radius">Radius</string>
+</resources>
